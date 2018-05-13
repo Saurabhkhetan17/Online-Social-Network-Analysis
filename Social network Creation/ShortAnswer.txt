@@ -1,0 +1,78 @@
+Enter your responses inline below and push this file to your private GitHub
+repository.
+
+
+1. Assume I plan to use the friend_overlap function above to quantify the
+similarity of two users. E.g., because 344 is larger than 1, I conclude that
+Jill Stein and Gary Johnson are more similar than Hillary Clinton and Donald
+Trump.
+
+How is this approach misleading? How might you fix it?
+
+Jill Stein and Gary Johnson follows more than 155 and 3500 people respectively.
+So the chances of following common people is more than Hillary Clinton and Donald Trump
+who follow less people and while in Trump count mostly are his family members and staff.
+
+Hillary Clinton being a politician can have more common friends with
+another politician and Donald Trump may have more business leader
+friends so there is pretty difficult to find the similarity among the groups they follow
+and also the set of audience they target.
+If we have to find similarity between the candidates we need to have various parameters such as
+ organizations supported by them, audience belonging to their targeted ideologies, friends etc.
+
+
+
+
+
+
+2. Looking at the output of your followed_by_hillary_and_donald function, why
+do you think this user is followed by both Hilary Clinton and Donald Trump,
+who are rivals? Do some web searches to see if you can find out more
+information.
+
+This is because they were fighting to be the President on the United States and 'The White House' is home to the
+President. That is the ultimate aim that they were targeting which is to get into the White House. Hillary and Trump
+emerged to be the no. 1 candidate from their respective political parties pinning down other candidates who were
+running to be N0. 1 elect, from their respective parties.
+
+
+
+
+
+
+3. There is a big difference in how many accounts each candidate follows (Gary
+Johnson follows over 3K accounts, while Donald Trump follows less than
+50). Why do you think this is? How might that affect our analysis?
+
+People who are related to Trump(basically whose last name is Trump), Donald-trump will supposedly be following.
+He also follows anything with Trump in the title viz. Trump Organization, Trump National Doral, Trump Golf, Trump Waikiki. Also,
+Trumps is an avid hater of mainstream media but still a large chunk of organizations that he follows are related to media.
+This clearly proves that he only follows people whom he is related to or has good personal rapport with any individual or organization.
+
+Whereas Gary Johnson is a businessman and was a popular governor during his two terms. He needs to follow more people in order to garner
+attention of more people towards his ideologies. According to a data, quoted by himself, Gary said almost 60% of the American
+people were unaware that he was running for Presidency.
+
+Gary Johnson has been on Twitter since January 2009 whereas Donald Trump joined Twitter last year. Trump believes in his own ideologies and supports ideas of very
+less people, be it the Republican candidates itself.
+
+It shouldn't affect our analysis much because it didn't affect the general campaign last year as well during elections. It actually depends on the
+number of people that follows you. For GovGaryJohnson, it is 347k whereas for president Trump it is 37.7 million.
+
+
+
+
+4. The follower graph we've collected is incomplete. To expand it, we would
+have to also collect the list of accounts followed by each of the
+friends. That is, for each user X that Donald Trump follows, we would have to
+also collect all the users that X follows. Assuming we again use the API call
+https://dev.twitter.com/rest/reference/get/friends/ids, how many requests will
+we have to make? Given how Twitter does rate limiting
+(https://dev.twitter.com/rest/public/rate-limiting), approximately how many
+minutes will it take to collect this data?
+
+ANS: Total users count for four candidate=  5936
+     Number of request per slot =15
+     Sleep Window = 15 mins
+     After rate limiting and neglecting the time taken to make the request,
+     we see that ([395(5936/15=396)]-1) * 15(sleep window)= 5925 mins.

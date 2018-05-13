@@ -1,0 +1,10 @@
+
+total users in network: 1707
+total tweets: 400
+total communities: 2
+users per community: 853.500000
+total positive, negative and combine tokens: 147 positive instances , 38 negative instances and 215 combine instances
+example of pos, neg, combine tokens: 
+positive:RT @kylewalker2: Great win for us yesterday! Another clean sheet too! Congrats to @aguerosergiokun for equalling the clubs goal record too!…
+negative:RT @MastiSports: #FPL Bloody hell. #Pep Roulette 🎯🎯🎯 @aguerosergiokun starts this time and @gabrieljesus33 on bench 🤭🤭🤭 #HUDMCI #huddvcity…
+combined:RT @BBCSport: @Elise_Christie @Mo_Farah @chrisfroome @LewisHamilton @anthonyfjoshua @HKane @JoKonta91 @JonniePeacock @adam_peaty @jonathanr…

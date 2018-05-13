@@ -1,0 +1,28 @@
+Grade: 30.00/35.00
+
+1 Deduction(s):
+
+--------------
+#1: 5.00 points
+Failing test: test_count_friends: 
+        @points=5
+        
+Traceback (most recent call last):
+  File "../assignments-sol/a0/a0_test.py", line 41, in test_count_friends
+    c = count_friends([{'friends': [1,2]}, {'friends': [2,3]}, {'friends': [2,3]}])
+  File "students/Saurabhkhetan17/a0/a0.py", line 225, in count_friends
+    for i, item in enumerate([name_user['screen_name'] for name_user in users]):
+  File "students/Saurabhkhetan17/a0/a0.py", line 225, in <listcomp>
+    for i, item in enumerate([name_user['screen_name'] for name_user in users]):
+KeyError: 'screen_name'
+
+source:
+    def test_count_friends(self):
+         """
+         @points=5
+         """
+         c = count_friends([{'friends': [1,2]}, {'friends': [2,3]}, {'friends': [2,3]}])
+         r = c.most_common()
+         self.assertListEqual(r, [(2, 3), (3, 2), (1, 1)])
+--------------
+
