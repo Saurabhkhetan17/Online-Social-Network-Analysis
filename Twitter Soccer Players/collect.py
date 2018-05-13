@@ -11,10 +11,10 @@ def get_twitter():
     Returns:
       An instance of TwitterAPI.
     """
-    consumer_key = 'aSDmzRI0ajSveMxy5NQXaVRNo'
-    access_token = '2998615999-KlweTZygNtdbSSzi0pIVc9b7vRlMx333ANCK8nS'
-    consumer_secret = 'waNH54S3XUdgJQwHUivr4yUqc9tdc6ToJHVY4tZZKManNkceRg'
-    access_token_secret = 'QShQOJ7rXlEdp0RCpn2vdlxKu4tLG2fXJLPcJ9y71G3o6'
+    consumer_key = ''
+    access_token = ''
+    consumer_secret = ''
+    access_token_secret = ''
 
     return TwitterAPI(consumer_key, consumer_secret, access_token, access_token_secret)
 
